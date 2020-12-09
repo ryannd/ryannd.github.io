@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Slab:wght@300;400&display=swap');
+
+.full-width {
+    height: 100%;
+    background-color: #fff1e6;
+    width: 100%;
+}
+
+
+.name-title {
+  font-family: 'Megrim', cursive;
+  font-size: 108px;
+}
+
+.subtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 32px;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+html,
+body {
+  height: 100%
+}
+
+.navbar-nav {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #cb997e;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.fadeinout {
+  -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.card-title {
+  font-family: 'Roboto Slab', cursive;
+  font-weight: bolder;
+}
+
+.card-text {
+  font-family: 'Roboto Slab', cursive;
+}
+
+.card-link {
+  font-weight: lighter;
+}

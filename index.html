@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+        <link href="styles/index.css" rel="stylesheet">
+       
+        <title>Ryan Dimaranan</title>
+    </head>
+    <body>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-bottom w-100 ml-auto">
+          <div class="navbar-nav w-100 justify-content-start">
+            <a class="nav-item nav-link" href="#">RYAN DIMARANAN</a>
+          </div>
+          <div class="navbar-nav w-100 justify-content-end">
+            <a class="nav-item nav-link" href="#home">HOME</a>
+            <a class="nav-item nav-link" href="#about">ABOUT</a>
+            <a class="nav-item nav-link" href="#projects">PROJECTS</a>
+            <a class="nav-item nav-link" href="./files/resume.pdf" target="_blank">RESUME</a>
+          </div>
+
+        </nav>
+      </div>
+
+      <section class="h-100 full-width" id="home">
+        <header class="container h-100">
+          <div class="d-flex align-items-center justify-content-center h-100">
+            <div class="d-flex flex-column">
+              <h1 class="display-1 name-title text-center">Ryan Dimaranan</h1>
+              <p class="subtitle text-center">Computer Science at UT Dallas</p>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <section class="h-100 full-width" id="about">
+        <header class="container h-100">
+          <div class="d-flex align-items-center justify-content-center h-100">
+            <div class="d-flex flex-column text-center">
+              <p class="subtitle text-center">I'm Ryan, a current Sophomore at the University of Texas at Dallas.</p>
+              <p class="subtitle text-center">I have experience coding with various different languages and technologies, including; Java, JavaScipt and C++.</p>
+              <p class="subtitle text-center">In my free time I enjoy playing the trumpet, video games and cooking.</p>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <section class="h-100 full-width" id="projects">
+        <header class="container h-100">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex flex-column text-center">
+              <p class="name-title">PROJECTS</p>
+
+              <div class="card mb-0 mt-5" style="max-width: 900px;">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Weather Dashboard</h5>
+                      <p class="card-text">An interactive weather application that shows current conditions, a five day forecast and a radar map.</p>
+                      <p class="card-text">Built with: Leaflet, Bootstrap, MapQuest Geocoding API, OpenStreetMap</p>
+                      <a href="https://ryannd.github.io/weather-app/"><p class="card-text card-link">demo</p></a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="./img/weather.png" class="card-img" alt="..." style="width: 400px; height: 200px; opacity: .9;">
+                  </div>
+                </div>
+                
+                <div class="card mb-0" style="max-width: 900px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-8 mt-5">
+                      <div class="card-body">
+                        <h5 class="card-title">CookAlong</h5>
+                        <p class="card-text">A virtual, hands free cooking assistant that guides the user through recipes via voice commands.</p>
+                        <p class="card-text">Built with: ReactJS, Bulma, Web Speech API, Spoonacular and Ruby on Rails</p>
+                        <a href="https://github.com/acm-projects/CookAlong"><p class="card-text card-link"">github</p></a>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                      <img src="./img/cookalong.png" class="card-img" style="width: 400px; height: 200px; opacity: .9;" alt="...">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+      <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+      <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+    </body>
+</html>
