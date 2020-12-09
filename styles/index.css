@@ -60,14 +60,37 @@ a:hover {
 }
 
 .card-title {
-  font-family: 'Roboto Slab', cursive;
+  font-family: 'Roboto Slab', serif;
   font-weight: bolder;
 }
 
 .card-text {
-  font-family: 'Roboto Slab', cursive;
+  font-family: 'Roboto Slab', serif;
 }
 
 .card-link {
   font-weight: lighter;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: 0;
+}
+
+.semester-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bolder;
+}
+
+.class-name {
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 300px;
+  height:300px;
+  object-fit: cover;
+  border-radius: 50%;
 }
