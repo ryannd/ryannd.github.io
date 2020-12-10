@@ -2,7 +2,7 @@
 
 .full-width {
     height: 100%;
-    background-color: #fff1e6;
+
     width: 100%;
 }
 
@@ -16,12 +16,12 @@
   font-family: 'Roboto Slab', serif;
   font-size: 32px;
   font-weight: lighter;
-  z-index: 1;
 }
 
 html,
 body {
-  height: 100%
+  height: 100%;
+  background-color: #fff1e6;
 }
 
 .navbar-nav {
@@ -100,4 +100,50 @@ a:hover {
   width: 80px;
   height:80px;
   object-fit: contain;
+}
+
+#courses {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+
+/* MOBILE CSS STUFF */
+
+@media (max-width: 768px){
+  .name-title {
+    font-family: 'Megrim', cursive;
+    font-size: 52px;
+  }
+
+  .subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  body { 
+    overflow-x: hidden; 
+    overflow-y: scroll;
+  }
+  
+  .class-name {
+    font-size: 12px;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+  
+  .courses-list {
+    min-height: 100%;
+  }
+
+  #projects {
+    margin-bottom: 100%;
+  }
+
+  #contact {
+    margin-top: 75%;
+  }
 }

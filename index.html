@@ -38,7 +38,7 @@
       </section>
 
       <section class="h-100 full-width" id="about">
-        <header class="container h-100">
+        <header class="container-fluid h-100">
           <div class="d-flex align-items-center justify-content-center h-100 flex-column">
             <img src="./img/me.jpg" alt="Avatar" class="avatar mb-5" data-aos="fade-in" data-aos-duration="500">
             <div class="d-flex flex-column text-center" data-aos="fade-in" data-aos-duration="500">
@@ -51,11 +51,10 @@
       </section>
 
       <section class="h-100 full-width" id="projects">
-        <header class="container h-100">
-          <div class="d-flex justify-content-center align-items-center h-100">
+        <header class="container-fluid h-100">
+          <div class="d-flex justify-content-center align-items-center ">
             <div class="d-flex flex-column text-center">
-              <p class="name-title" data-aos="fade-in" data-aos-duration="400">PROJECTS</p>
-
+              <p class="name-title mt-5" data-aos="fade-in" data-aos-duration="400">PROJECTS</p>
               <div class="card mb-0 mt-5" style="max-width: 900px;" data-aos="fade-in" data-aos-duration="500">
                 <div class="row no-gutters">
                   <div class="col-md-8">
@@ -70,21 +69,22 @@
                     <img src="./img/weather.png" class="card-img" alt="..." style="width: 400px; height: 200px; opacity: .9;">
                   </div>
                 </div>
+              </div>
                 
-                <div class="card mb-0" style="max-width: 900px;" data-aos="fade-in" data-aos-duration="500">
-                  <div class="row no-gutters">
-                    <div class="col-md-8 mt-5">
-                      <div class="card-body">
-                        <h5 class="card-title">CookAlong</h5>
-                        <p class="card-text">A virtual, hands free cooking assistant that guides the user through recipes via voice commands.</p>
-                        <p class="card-text">Built with: ReactJS, Bulma, Web Speech API, Spoonacular and Ruby on Rails</p>
-                        <a href="https://github.com/acm-projects/CookAlong"><p class="card-text card-link"">github</p></a>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mt-5">
-                      <img src="./img/cookalong.png" class="card-img" style="width: 400px; height: 200px; opacity: .9;" alt="...">
+              <div class="card mb-0" style="max-width: 900px;" data-aos="fade-in" data-aos-duration="500">
+                <div class="row no-gutters">
+                  <div class="col-md-8 mt-5">
+                    <div class="card-body">
+                      <h5 class="card-title">CookAlong</h5>
+                      <p class="card-text">A virtual, hands free cooking assistant that guides the user through recipes via voice commands.</p>
+                      <p class="card-text">Built with: ReactJS, Bulma, Web Speech API, Spoonacular and Ruby on Rails</p>
+                      <a href="https://github.com/acm-projects/CookAlong"><p class="card-text card-link"">github</p></a>
                     </div>
                   </div>
+                  <div class="col-md-4 mt-5">
+                    <img src="./img/cookalong.png" class="card-img" style="width: 400px; height: 200px; opacity: .9;" alt="...">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -92,10 +92,10 @@
       </section>
 
       <section class="h-100 full-width" id="courses">
-        <header class="container h-100">
-          <div class="d-flex align-items-center justify-content-center h-100">
-            <div class="d-flex flex-column w-100 text-center">
-              <h1 class="display-1 name-title text-center" data-aos="fade-in" data-aos-duration="500">Courses Taken</h1>
+        <header class="container-fluid">
+          <div class="d-flex align-items-center justify-content-center container-fluid courses-list">
+            <div class="d-flex flex-column text-center">
+              <h1 class="display-1 name-title text-center mt-5" data-aos="fade-in" data-aos-duration="500">Courses Taken</h1>
               <div class="row mt-5">
                 <div class="col">
                   <ul class="list-group" data-aos="fade-in" data-aos-duration="500">
@@ -125,10 +125,7 @@
                     <li class="list-group-item class-name">JAPN 1311: Beginning Japanese I</li>
                   </ul>
                 </div>
-              </div>
-
-              <div class="row mt-3">
-                <div class="col-4">
+                <div class="col">
                   <ul class="list-group" data-aos="fade-in" data-aos-duration="500">
                     <li class="list-group-item semester-title">Spring 2021</li>
                     <li class="list-group-item class-name">CS 3341: Probability and Statistics in CS/SE</li>
