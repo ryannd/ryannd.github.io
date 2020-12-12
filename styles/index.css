@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Slab:wght@300;400&display=swap');
 
+html  {
+
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+
+}
+
 .full-width {
     height: 100%;
 
