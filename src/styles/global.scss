@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px black;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
+
+@font-face {
+  font-family: 'Agora';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/Agora.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'VCR';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/VCR.ttf') format("truetype");
+}
+
+$screen-background: #101820;
+
+html * {
+  background: $screen-background;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  font-family: Agora;
+}
+
+.text {
+  font-family: VCR;
+}
+
+/* REGULAR SCANLINES SETTINGS */
+// from https://codepen.io/meduzen/pen/zxbwRV
+
+  // width of 1 scanline (min.: 1px)
+  $scan-width: 3px;
+
+  // emulates a damage-your-eyes bad pre-2000 CRT screen ♥ (true, false)
+  $scan-crt: true;
+
+  // frames-per-second (should be > 1), only applies if $scan-crt: true;
+  $scan-fps: 60;
+
+  // scanline-color (rgba)
+  $scan-color: rgba(#000, .3);
+
+  // set z-index on 8, like in ♥ 8-bits ♥, or…
+  // set z-index on 2147483648 or more to enable scanlines on Chrome fullscreen (doesn't work in Firefox or IE);
+  $scan-z-index: 2147483648; 
+
+/* MOVING SCANLINE SETTINGS */
+
+  // moving scanline (true, false)
+  $scan-moving-line: false;
+
+  // opacity of the moving scanline
+  $scan-opacity: .75;
+
+/* MIXINS */
+
+// apply CRT animation: @include scan-crt($scan-crt);
+@mixin scan-crt($scan-crt) {
+    @if $scan-crt == true {
+        animation: scanlines 1s steps($scan-fps) infinite;
+    }
+    @else { animation: none; }
+}
+
+/* CSS .scanlines CLASS */
+
+.scanlines {
+  position: relative;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    display: block;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+  }
+
+  &:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $scan-z-index;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        $scan-color 51%
+    );
+    background-size: 100% $scan-width*2;
+    @include scan-crt($scan-crt);
+  }  
+}
+
+@keyframes scanlines {
+    0% {
+        background-position: 0 50%;
+    }
+}
+
+.no-scanlines {
+  position: relative;
+  overflow: hidden;
+}
