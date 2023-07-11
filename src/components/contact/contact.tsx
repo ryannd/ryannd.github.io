@@ -1,5 +1,6 @@
 import * as React from "react"
 import { links } from "../../globals/data";
+import PageTitle from "../page_title";
 
 type Props = {
     backToMenu: () => void;
@@ -8,7 +9,7 @@ type Props = {
 const Contact = ({backToMenu}: Props) => {
     return (
         <div className="self-start mb-auto mt-16 md:mt-0 pb-16">
-            <h1 className="text text-green-500 text-4xl md:text-5xl xl:text-6xl text-left self-start mb-2 md:mb-10 sticky top-0 py-2 md:py-0"><span onClick={backToMenu}>{`<<< `}</span>CONTACT</h1>
+            <PageTitle title="CONTACT" backToMenu={backToMenu}/>
             <div className="mt-16">
                 {
                     links.map((link) => {
