@@ -10,7 +10,7 @@ export const textFont = Nunito_Sans({
   weight: "200"
 })
 
-export const frontPageFont = Nunito_Sans({
+export const logo = Nunito_Sans({
     subsets: ["latin"],
-    weight: "300"
+    weight: "800"
 })
