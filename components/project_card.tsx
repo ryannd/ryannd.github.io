@@ -15,7 +15,7 @@ export default function ProjectCard({ project } : {project: Project}) {
         <div className="">
             <div className="relative group">
                 <a href={project.link} target="_blank" className="absolute inset-0 z-10 bg-black text-4xl text-center flex items-center justify-center opacity-0 hover:opacity-100 bg-opacity-40 duration-300">
-                    <h1 className={`${titleFont.className} gap-4`} >Github <FaExternalLinkAlt /></h1> 
+                    <h1 className={`${titleFont.className} flex gap-4`} >Github <FaExternalLinkAlt /></h1> 
                 </a>
                 <Image
                     src={project.cover}

@@ -11,7 +11,7 @@ interface Experience {
 
 export default function ExperienceCard({ experience }: { experience: Experience }) {
     return <>
-         <div>
+        <div>
             <p className={`${textFont.className}`}>{experience.years}</p>
         </div>
         <div className="col-span-4 lg:col-span-3">
@@ -30,5 +30,7 @@ export default function ExperienceCard({ experience }: { experience: Experience 
                 }
             </div>
         </div>
+        <div className="hidden lg:block"></div>
+        <div className="col-span-5 my-3"></div>
     </>
 }

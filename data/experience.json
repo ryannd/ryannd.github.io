@@ -1,5 +1,5 @@
 {
-    "data": [
+    "work": [
         {
             "company": "Paramount Global",
             "years": "2022 - present",
@@ -16,6 +16,63 @@
                 "React",
                 "Next.js",
                 "Apollo GraphQL"
+            ]
+        },
+        {
+            "company": "Warner Bros. Discovery",
+            "years": "2022",
+            "titles": [
+                "Software Engineering Intern"
+            ],
+            "description": "Designed a string storage solution that aimed to eliminate developer effort in maintaining and translating 1000+ strings across all HBO Max services.",
+            "tech_stack": [
+                "Typescript",
+                "Jest",
+                "React",
+                "Drupal"
+            ]
+        },
+        {
+            "company": "United Vehicle Group",
+            "years": "2021 - 2022",
+            "titles": [
+                "Software Engineering Intern"
+            ],
+            "description": "Built and maintained a remote car-sharing platform that services 200+ customers per week and a fleet of 100+ vehicles in 10 cities around the United States",
+            "tech_stack": [
+                "Typescript",
+                "React",
+                "GatsbyJS",
+                "Nest.js",
+                "Next.js",
+                "PHP",
+                "Laravel"
+            ]
+        }
+    ],
+    "school": [
+        {
+            "school": "The University of Texas at Austin",
+            "years": "2023 - present",
+            "degree": "MS in Computer Science",
+            "honors": [],
+            "courses": [
+                "Natural Language Processing",
+                "Android Programming",
+                "Advanced Linear Algebra"
+            ]
+        },
+        {
+            "school": "The University of Texas at Dallas",
+            "years": "2019 - 2022",
+            "degree": "BS in Computer Science",
+            "honors": [
+                "Collegium V Honors",
+                "Magna Cum Laude"
+            ],
+            "courses": [
+                "Design and Analysis of Computer Algorithms (Graduate)",
+                "Machine Learning (Graduate)"
             ]
         }
     ]
