@@ -12,7 +12,7 @@ export const textFont = Nunito_Sans({
 
 export const subtitleFont = Nunito_Sans({
   subsets: ["latin"],
-  weight: "400"
+  weight: "300"
 })
 
 export const logo = Nunito_Sans({
