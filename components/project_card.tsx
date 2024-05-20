@@ -1,11 +1,12 @@
 import Image from "next/image"
-import { textFont, titleFont } from "../globals/fonts"
+import { titleFont } from "../globals/fonts"
+import StackBadge from "./experience/stack_badge";
 
 interface Project {
     cover: string;
     name: string;
     year: string;
-    tech_stack: string;
+    tech_stack: string[];
     link: string;
 }
 
@@ -22,9 +23,15 @@ export default function ProjectCard({ project } : {project: Project}) {
                 />
             </a>
             <div className="flex flex-col justify-center items-start mt-4">
-                    <h1 className={`${titleFont.className} text-xl`}>{project.year}</h1>
-                    <h1 className={`${titleFont.className} text-2xl`}>{project.name}</h1>
-                    <p className={`${textFont.className}`}>{project.tech_stack}</p>
+                <h1 className={`${titleFont.className} text-xl`}>{project.year}</h1>
+                <h1 className={`${titleFont.className} text-2xl`}>{project.name}</h1>
+                <div className="flex flex-wrap gap-2 mt-2">
+                {
+                    project.tech_stack.map((text) => {
+                        return <StackBadge key={text} text={text} />
+                    })
+                }
+                </div>
             </div>
         </div>
     </>

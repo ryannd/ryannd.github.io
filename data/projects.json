@@ -4,7 +4,13 @@
             "cover": "/images/project/smq.png",
             "name": "Spotify Music Quiz",
             "year": "2022",
-            "tech_stack": "Next.js, Socket.io, Nest.js, MongoDB",
+            "tech_stack": [
+                "Next.js",
+                "Socket.io",
+                "NestJS",
+                "React.js",
+                "MongoDB"
+            ],
             "link": "https://github.com/ryannd/smq"
         }
     ]
