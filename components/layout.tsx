@@ -1,6 +1,6 @@
 import { ReactNode, useState } from "react";
-import Menu from "./menu";
-import MobileMenu from "./mobile_menu";
+import Menu from "./menu/menu";
+import MobileMenu from "./menu/mobile_menu";
 
 
 export default function Layout({ children }: { children?: ReactNode }) {

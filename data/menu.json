@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "title": "about",
+            "path": "/about"
+        }, 
+        {
+            "title": "experience",
+            "path": "/experience"
+        },
+        {
+            "title": "projects",
+            "path": "/projects"
+        }, 
+        {
+            "title": "contact",
+            "path": "/contact"
+        },
+        {
+            "title": "cv",
+            "path": "/cv"
+        }
+    ]
+}

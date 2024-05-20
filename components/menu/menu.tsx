@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { titleFont, textFont, logo } from "../globals/fonts";
+import { titleFont, textFont, logo } from "../../globals/fonts";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Links from "./links";
 
 export default function Menu({ onMenuClick }: { onMenuClick: () => void}) {
     return <>
@@ -11,12 +12,7 @@ export default function Menu({ onMenuClick }: { onMenuClick: () => void}) {
             </Link>
         </div>
         <div className="hidden lg:flex flex-col gap-2">
-            <p className={`${textFont.className} text-4xl text-center lg:text-left`}>about</p>
-            <Link href="/projects">
-                <p className={`${textFont.className} text-4xl text-center lg:text-left`}>projects</p>
-            </Link>
-            <p className={`${textFont.className} text-4xl text-center lg:text-left`}>contact</p>
-            <p className={`${textFont.className} text-4xl text-center lg:text-left`}>cv</p>
+            <Links />
         </div>
         <div className="block lg:hidden flex justify-between">
             <Link href="/">

@@ -22,8 +22,8 @@ export default function ProjectCard({ project } : {project: Project}) {
                 />
             </a>
             <div className="flex flex-col justify-center items-start mt-4">
-                    <h1 className={`${titleFont.className}`}>{project.year}</h1>
-                    <h1 className={`${titleFont.className}`}>{project.name}</h1>
+                    <h1 className={`${titleFont.className} text-xl`}>{project.year}</h1>
+                    <h1 className={`${titleFont.className} text-2xl`}>{project.name}</h1>
                     <p className={`${textFont.className}`}>{project.tech_stack}</p>
             </div>
         </div>
