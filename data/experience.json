@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "company": "Paramount Global",
+            "years": "2022 - present",
+            "titles": [
+                "Software Engineering Intern (2022-2023)",
+                "Associate Software Engineer (2023 - present)"
+            ],
+            "description": "Developing new frontend features for Paramount+ Web, driving an increase in user interaction and retention.",
+            "tech_stack": [
+                "Javascript",
+                "Typescript",
+                "PHP",
+                "Jest",
+                "React",
+                "Next.js",
+                "Apollo GraphQL"
+            ]
+        }
+    ]
+}
