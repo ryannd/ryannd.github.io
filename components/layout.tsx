@@ -11,7 +11,7 @@ export default function Layout({ children }: { children?: ReactNode }) {
     }
 
     return <>
-      <main className="p-10 w-screen h-screen overflow-hidden">
+      <main className="p-10 w-screen h-screen lg:overflow-hidden">
         <div className="lg:grid lg:grid-cols-3 h-full gap-8">
           <div className="w-full flex flex-col gap-16 sticky">
             <Menu onMenuClick={onMenuClick} />
