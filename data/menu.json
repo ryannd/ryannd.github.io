@@ -13,10 +13,6 @@
             "path": "/projects"
         }, 
         {
-            "title": "contact",
-            "path": "/contact"
-        },
-        {
             "title": "cv",
             "path": "/cv"
         }
