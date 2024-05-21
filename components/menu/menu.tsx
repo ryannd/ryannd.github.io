@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { titleFont, textFont, logo } from "../../globals/fonts";
-import { GiHamburgerMenu } from "react-icons/gi";
 import Links from "./links";
+import { Squeeze as Hamburger } from 'hamburger-react'
 
-export default function Menu({ onMenuClick }: { onMenuClick: () => void}) {
+export default function Menu({ onMenuClick, isOpen }: { onMenuClick: () => void, isOpen: boolean}) {
     return <>
         <div className="hidden lg:block">
             <Link href="/">
@@ -14,13 +14,11 @@ export default function Menu({ onMenuClick }: { onMenuClick: () => void}) {
         <div className="hidden lg:flex flex-col gap-2">
             <Links />
         </div>
-        <div className="block lg:hidden flex justify-between">
+        <div className="block lg:hidden flex justify-between items-center max-h-[36px]">
             <Link href="/">
                 <h1 className={`${logo.className} text-3xl text-center lg:text-5xl lg:text-left`}>RD</h1>
             </Link>
-            <div className="text-3xl" onClick={onMenuClick}>
-                <GiHamburgerMenu />
-            </div>
+           <Hamburger toggled={isOpen} toggle={onMenuClick} size={28} />
         </div>
     </>
 }
