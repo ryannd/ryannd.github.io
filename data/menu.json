@@ -16,5 +16,12 @@
             "title": "cv",
             "path": "/cv"
         }
-    ]
+    ],
+    "seo": {
+        "/": "Ryan Dimaranan - Portfolio",
+        "/about": "Ryan Dimaranan - About",
+        "/experience": "Ryan Dimaranan - Experience",
+        "/projects": "Ryan Dimaranan - Projects",
+        "/cv": "Ryan Dimaranan - CV"
+    }
 }
