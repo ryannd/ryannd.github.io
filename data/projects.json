@@ -1,6 +1,18 @@
 {
     "projects": [
         {
+            "cover": "/images/project/watchlist-compose.png",
+            "name": "Watchlist - Jetpack Compose",
+            "year": "2024",
+            "tech_stack": [
+                "Jetpack Compose",
+                "Kotlin",
+                "Firebase",
+                "Material 3"
+            ],
+            "link": "https://github.com/ryannd/watchlist-mscso"
+        },
+        {
             "cover": "/images/project/smq.png",
             "name": "Spotify Music Quiz",
             "year": "2022",

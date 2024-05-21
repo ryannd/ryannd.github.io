@@ -22,7 +22,7 @@ export default function ProjectCard({ project } : {project: Project}) {
                     alt={`${project.name} cover image`}
                     width={1920}
                     height={1080}
-                    className="transition ease-in-out duration-200 grayscale group-hover:grayscale-0 aspect-video object-fill shadow-2xl shaddow-inner border-2 blur-none group-hover:blur-[2px]"
+                    className="transition ease-in-out duration-200 grayscale group-hover:grayscale-0 aspect-video object-cover shadow-2xl shaddow-inner border-2 blur-none group-hover:blur-[2px]"
                 />
             </div>
             <div className="flex flex-col justify-center items-start mt-4">
