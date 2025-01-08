@@ -4,13 +4,14 @@
             "company": "Paramount Global",
             "years": "2022 - present",
             "titles": [
-                "Associate Software Engineer (2023 - present)",
-                "Software Engineering Intern (2022-2023)"
+                "Software Engineer (2025 - present)",
+                "Associate Software Engineer (2023 - 2024)",
+                "Software Engineering Intern (2022 - 2023)"
             ],
             "description": "Developing new frontend features for Paramount+ Web, driving an increase in user interaction and retention.",
             "tech_stack": [
-                "Javascript",
-                "Typescript",
+                "JavaScript",
+                "TypeScript",
                 "PHP",
                 "Jest",
                 "React",
@@ -60,7 +61,8 @@
                 "Natural Language Processing",
                 "Android Programming",
                 "Advanced Linear Algebra",
-                "Parallel Systems"
+                "Parallel Systems",
+                "Deep Learning"
             ]
         },
         {

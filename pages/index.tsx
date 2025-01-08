@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import { textFont, titleFont } from "../globals/fonts";
 import { motion } from 'framer-motion';
+import HomeData from '../data/home.json';
 
 export default function Home() {
   const container = {
@@ -21,10 +22,12 @@ export default function Home() {
   return (
     <Layout>
       <motion.div variants={container} initial="hidden" animate="show" className="w-full xl:w-5/6 h-full flex flex-col justify-center lg:items-start gap-3 lg:gap-6">
-        <motion.h1 variants={item} className={`text-3xl lg:text-6xl text-left ${titleFont.className}`}>I&apos;m Ryan,</motion.h1>
-        <motion.h1 variants={item} className={`text-3xl lg:text-6xl text-left ${textFont.className}`}>a software engineer based in Houston, TX</motion.h1>
-        <motion.h1 variants={item} className={`mt-2 text-3xl lg:mt-6 lg:text-6xl text-left ${textFont.className}`}>currently building frontend at Paramount+</motion.h1>
-        <motion.h1 variants={item} className={`mt-2 text-3xl lg:mt-6 lg:text-6xl text-left ${textFont.className}`}>also a part time master&apos;s student at UT Austin</motion.h1>
+        <motion.h1 variants={item} className={`text-3xl lg:text-6xl text-left ${titleFont.className}`}>{HomeData.title}</motion.h1>
+        <div className="flex flex-col gap-2">
+          {
+            HomeData.subtitles.map((string) => <motion.p key={string} variants={item} className={`text-3xl lg:text-4xl text-left ${textFont.className}`}>{string}</motion.p>)
+          }
+        </div>
       </motion.div>
     </Layout>
   );

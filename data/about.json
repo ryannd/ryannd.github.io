@@ -1,9 +1,9 @@
 {
     "data": {
-        "headline": "Hey, my name is Ryan!",
+        "headline": "Welcome!",
         "sentences": [
             "I am a Houston based software engineer, specializing in full stack web development.",
-            "Currently, I work at Paramount Global as an Associate Software Engineer, building new frontend web experiences for Paramount+.",
+            "Currently, I work at Paramount as a Software Engineer, building new frontend web experiences for Paramount+.",
             "Additionally, I am pursuing my Master's in Computer Science part time at The University of Texas at Austin.",
             "Outside of tech, I enjoy collecting records, watching anime and k-drama, eating good food, and traveling."
         ]

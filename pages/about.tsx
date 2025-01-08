@@ -28,6 +28,7 @@ export default function About() {
     return <Layout>
         <div className="lg:p-10 mb-10 lg:mb-0 w-full" ref={scope}>
             <Image 
+                priority 
                 src="/images/profile.JPEG"
                 alt="My profile picture"
                 width={800}
